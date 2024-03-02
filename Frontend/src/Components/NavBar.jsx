@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './navbar.css';
+import '../index.css';
 
 function NavBar() {
   const [onRoute, setOnRoute] = useState('Home');
@@ -40,8 +41,8 @@ function NavBar() {
         className={({ isActive }) =>
           `${
             isActive
-              ? ' p-3 text-xl rounded-lg  duration-500'
-              : ' p-3 text-xl rounded-lg hover:bg-slate-900 duration-300'
+              ? ' p-3 text-xl rounded-lg transition-all  duration-500 PoppinsSemiBoldItalic text-orange-400 '
+              : ' p-3 text-xl rounded-lg  duration-300 PoppinsThin'
           }
           w-[100px] text-center z-10
         `
@@ -56,8 +57,8 @@ function NavBar() {
         className={({ isActive }) =>
           `${
             isActive
-              ? ' p-3 text-xl rounded-lg  duration-500'
-              : ' p-3 text-xl rounded-lg hover:bg-slate-900 duration-500'
+              ? ' p-3 text-xl rounded-lg  transition-all  duration-500 PoppinsSemiBoldItalic text-orange-400'
+              : ' p-3 text-xl rounded-lg  duration-500 PoppinsThin'
           }
         w-[100px] text-center z-10`
         }
@@ -71,8 +72,8 @@ function NavBar() {
         className={({ isActive }) =>
           `${
             isActive
-              ? ' p-3 text-xl rounded-lg  duration-500'
-              : ' p-3 text-xl rounded-lg hover:bg-slate-900 duration-500'
+              ? ' p-3 text-xl rounded-lg  transition-all  duration-500 PoppinsSemiBoldItalic text-orange-400'
+              : ' p-3 text-xl rounded-lg  duration-500  PoppinsThin'
           }
         w-[100px] text-center z-10`
         }

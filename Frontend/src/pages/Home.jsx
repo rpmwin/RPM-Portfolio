@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import './Home.css';
+import HeroHeader from '../Components/HeroHeader';
+import HeroAbout from '../Components/HeroAbout';
 
 function Home() {
+  
   return (
-    <div>Home</div>
-  )
+    <div className=" ">
+      <HeroHeader />
+      <HeroAbout />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

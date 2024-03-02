@@ -1,54 +1,62 @@
-import React from 'react'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import React from 'react';
+import Card from '../Components/Card';
+import github from '../assets/icons/gihub.png';
+import linkedin from '../assets/icons/linkedin.png';
+import discord from '../assets/icons/discord.svg';
+import facebook from '../assets/icons/facebook.svg';
+import twitter from '../assets/icons/Twitter.png';
+import gmail from '../assets/icons/gmail.svg';
+
+
 function Contact() {
-
-  const allSocialMediaLinks = {
-    Gmail:{
-      category:'Gmail',
-      link:'mailto:rishikpuneetm@gmail.com',
-      icon:'',
-
+  const allSocialMediaLinks = [
+    {
+      category: 'Gmail',
+      icon: gmail,
+      link: 'mailto:rishikpuneetm@gamil.com',
     },
-    Twitter:{
-      category:'Twitter',
-      link:'https://twitter.com/',
-      icon:'../assets/icons/Twitter.png',
+    {
+      category: 'Github',
+      icon: github,
+      link: 'https://github.com/rpmwin',
     },
-    Github:{
-      category:'Github',
-      link:'https://github.com/rpmwin',
-      icon:'../assets/icons/github.png',
+    {
+      category: 'Linkedin',
+      icon: linkedin,
+      link: 'https://www.linkedin.com/in/rishik-puneet-m-125261229/',
     },
-    LinkedIn:{
-      category:'LinkedIn',
-      link:'https://www.linkedin.com/in/rishik-puneet-m-125261229',
-      icon:'../assets/icons/linkedin.png',
+    {
+      category: 'Facebook',
+      icon: facebook,
+      link: 'https://www.facebook.com/',
     },
-    Facebook:{
-      category:'Facebook',
-      link:'https://www.facebook.com/',
-      icon:'../assets/icons/facebook.png',
+    {
+      category: 'Twitter',
+      icon: twitter,
+      link: 'https://twitter.com/',
     },
-    Discord:{
-      category:'Discord',
-      link:'https://discord.com/users/1057328346440155277',
-      icon:'../assets/icons/discord.png',
-    }
-
-  }
+    {
+      category: 'Discord',
+      icon: discord,
+      link: 'https://discord.com/',
+    },
+  ];
 
   return (
-    <div className=' text-center '>
-      <div className='BaseNeutralBig text-[100px] tracking-wider'> CONTACT</div>
-      <div className='text-[20px]'>Let's Connect and build something <span>COOL</span>   together</div>
-      <div>
-        {
-
-        }
+    <div className="text-center flex flex-col items-center justify-center w-full h-full">
+      <div className="BaseNeutralBig text-6xl tracking-wider m-8 text-lime-500">CONTACT - ME</div>
+      <div className="text-2xl">
+        Let's Connect and build something <span className="font-bold text-3xl text-[#96a551]">COOL</span> together
+      </div>
+      <div className="flex flex-wrap justify-center">
+        {allSocialMediaLinks.map((link, index) => (
+          <div key={index} className="w-1/2 p-2 ">
+            <Card category={link.category} icon={link.icon} link={link.link} />
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

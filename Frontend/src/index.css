@@ -18,3 +18,35 @@
 .BaseNeutralThin {
   font-family: BaseNeutralThin;
 }
+
+@font-face {
+  font-family: ImPrisha;
+  src: url(../src/assets/fonts/IMPRISHA.TTF);
+}
+.ImPrisha {
+  font-family: ImPrisha;
+}
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../src/assets/fonts/POPPINS-SEMIBOLD.TTF);
+}
+.PoppinsSemiBold {
+  font-family: PoppinsSemiBold;
+}
+
+@font-face {
+  font-family: PoppinsSemiBoldItalic;
+  src: url(../src/assets/fonts/POPPINS-SEMIBOLDITALIC.TTF);
+}
+.PoppinsSemiBoldItalic {
+  font-family: PoppinsSemiBoldItalic;
+}
+
+@font-face {
+  font-family: PoppinsThin;
+  src:url(../src/assets/fonts/POPPINS-THINITALIC.TTF);
+}
+.PoppinsThin {
+  font-family: PoppinsThin;
+}

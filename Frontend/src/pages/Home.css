@@ -1,0 +1,45 @@
+.dynamicText{
+  height: 60px ;
+  overflow: hidden;
+}
+
+.dynamicText li{
+  z-index: 0;
+  height: 50px;
+  list-style: none;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  line-height: 50px;
+  animation: slide 12s steps(4) infinite;
+  position: relative;
+  top: 0;
+}
+@keyframes slide{
+  100%{
+    top: -240px;
+    
+  }
+}
+.dynamicText li span{
+  position: relative;
+}
+
+.dynamicText li span::after{
+
+content: "";
+left: 0;
+position: absolute;
+height: 90%;
+width: 100%;
+border-left: 4px solid rgb(90, 44, 122);
+background: #000;
+animation: typing 3s steps(150) infinite;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
