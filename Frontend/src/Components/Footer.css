@@ -1,20 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 @font-face {
   font-family: BaseNeutralBig;
   src: url(../assets/fonts/BASENEUETRIAL-CONDEXTBDOBLIQ.TTF);
 }
-.BaseNeutralBig {
+.BaseNeutralBig{
   font-family: BaseNeutralBig;
 }
+
 
 @font-face {
   font-family: BaseNeutralThin;
   src: url(../assets/fonts/BASENEUETRIAL-LIGHT.TTF);
 }
-.BaseNeutralThin {
+.BaseNeutralThin{
   font-family: BaseNeutralThin;
 }
