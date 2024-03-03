@@ -38,7 +38,7 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
           <Footer />
         </div>
       </Router>

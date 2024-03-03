@@ -29,6 +29,7 @@ function HeroAbout() {
         Skilled in creating responsive and user-friendly web interfaces. Proficient in Reactjs , Nextjs and modern web technologies, dedicated to crafting visually appealing and performant digital experiences.
         </p>
       </div>
+      
 
     </div>
   );
