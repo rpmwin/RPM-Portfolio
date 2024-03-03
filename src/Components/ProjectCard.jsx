@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import rpm from './RPM3.svg';
+import arrowsvg from './arrow.svg';
 
 function ProjectCard({
   name,
@@ -14,7 +16,7 @@ function ProjectCard({
       <div className="flex flex-col items-center justify-center w-[400px]  h-full mx-auto px-3 my-4 bg-neutral-950 border  border-slate-800 rounded-lg">
         <div className=" m-2 w-full rounded text-left   flex items-center border-b">
           <div>
-            <img src={'RPM3.svg'} className="w-[40px] mr-4 "></img>
+            <img src={rpm} className="w-[40px] mr-4 "></img>
           </div>
           <div>
             <h1 className="text-2xl text-white PoppinsSemiBoldItalic m-2">
@@ -51,7 +53,7 @@ function ProjectCard({
             className="flex items-center justify-center text-blue-700"
           >
             Visit source code on GitHub{' '}
-            <img src="src\assets\icons\external_link.jpg" width={25} />
+            <img src={arrowsvg} width={25} />
           </Link>
         </div>
       </div>
