@@ -15,8 +15,8 @@ function App() {
     const moveDiv = (e) => {
       const divWidth = div.offsetWidth;
       const divHeight = div.offsetHeight;
-      div.style.left = (e.pageX - divWidth / 2) + 'px';
-      div.style.top = (e.pageY - divHeight / 2) + 'px';
+      div.style.left = e.pageX - divWidth / 2 + 'px';
+      div.style.top = e.pageY - divHeight / 2 + 'px';
     };
 
     document.addEventListener('mousemove', moveDiv);
@@ -29,12 +29,17 @@ function App() {
   return (
     <div className="App flex flex-col  items-center min-h-screen w-full h-full bg-black text-white overflow-x-hidden relative">
       <Router>
-        <div id="cursorDiv" className="absolute bg-[#a5515175] w-8 h-8 rounded-full z-10 "></div>
+        <div
+          id="cursorDiv"
+          className="absolute bg-[#a5515175] w-8 h-8 rounded-full z-10 "
+        ></div>
         <NavBar />
         <div className=" flex-grow z-50 ">
           <Routes>
             <Route path="/" element={<Home />} />
+
             <Route path="/Projects" element={<Projects />} />
+
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
